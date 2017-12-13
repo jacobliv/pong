@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+   <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAuHQfXZgMHSYVUHOTxRcfPM4xAq1OvVNA",
+      authDomain: "multiplayerpong-ee19b.firebaseapp.com",
+      databaseURL: "https://multiplayerpong-ee19b.firebaseio.com",
+      projectId: "multiplayerpong-ee19b",
+      storageBucket: "multiplayerpong-ee19b.appspot.com",
+      messagingSenderId: "338150572162"
+    };
+    firebase.initializeApp(config);
+  </script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="javascripts/client.js"></script>
+   <script src="javascripts/beginGame.js"></script>
+   <script src="javascripts/midGameMessage.js"></script>
+   <script src="javascripts/EndGame.js"></script>
+   <script src="javascripts/paddle.js"></script>
+   <script src="javascripts/puck.js"></script>
+   <script src="javascripts/speed.js"></script>
+   <script src="javascripts/randomDir.js"></script>
+
+
+</head>
+</body>
+<div class="player1Hearts">
+  <img src="img/heart.png" id="oneHeart1" class="heart">
+  <img src="img/heart.png" id="oneHeart2" class="heart">
+  <img src="img/heart.png" id="oneHeart3" class="heart">
+  <img src="img/heart.png" id="oneHeart4" class="heart">
+  <img src="img/heart.png" id="oneHeart5" class="heart">
+  <img src="img/heart.png" id="oneHeart6" class="heart">
+  <img src="img/heart.png" id="oneHeart7" class="heart">
+  <img src="img/heart.png" id="oneHeart8" class="heart">
+  <img src="img/heart.png" id="oneHeart9" class="heart">
+  <img src="img/heart.png" id="oneHeart10" class="heart">
+</div>
+<div class="player2Hearts">
+  <img src="img/heart.png" id="twoHeart1" class="heart">
+  <img src="img/heart.png" id="twoHeart2" class="heart">
+  <img src="img/heart.png" id="twoHeart3" class="heart">
+  <img src="img/heart.png" id="twoHeart4" class="heart">
+  <img src="img/heart.png" id="twoHeart5" class="heart">
+  <img src="img/heart.png" id="twoHeart6" class="heart">
+  <img src="img/heart.png" id="twoHeart7" class="heart">
+  <img src="img/heart.png" id="twoHeart8" class="heart">
+  <img src="img/heart.png" id="twoHeart9" class="heart">
+  <img src="img/heart.png" id="twoHeart10" class="heart">
+</div>
+<div class="player3Hearts">
+  <img src="img/heart.png" id="threeHeart1" class="heart">
+  <img src="img/heart.png" id="threeHeart2" class="heart">
+  <img src="img/heart.png" id="threeHeart3" class="heart">
+  <img src="img/heart.png" id="threeHeart4" class="heart">
+  <img src="img/heart.png" id="threeHeart5" class="heart">
+  <img src="img/heart.png" id="threeHeart6" class="heart">
+  <img src="img/heart.png" id="threeHeart7" class="heart">
+  <img src="img/heart.png" id="threeHeart8" class="heart">
+  <img src="img/heart.png" id="threeHeart9" class="heart">
+  <img src="img/heart.png" id="threeHeart10" class="heart">
+</div>
+<div class="player4Hearts">
+  <img src="img/heart.png" id="fourHeart1" class="heart">
+  <img src="img/heart.png" id="fourHeart2" class="heart">
+  <img src="img/heart.png" id="fourHeart3" class="heart">
+  <img src="img/heart.png" id="fourHeart4" class="heart">
+  <img src="img/heart.png" id="fourHeart5" class="heart">
+  <img src="img/heart.png" id="fourHeart6" class="heart">
+  <img src="img/heart.png" id="fourHeart7" class="heart">
+  <img src="img/heart.png" id="fourHeart8" class="heart">
+  <img src="img/heart.png" id="fourHeart9" class="heart">
+  <img src="img/heart.png" id="fourHeart10" class="heart">
+</div>
+
+<canvas id="canvas" width="1200" height="700"></canvas><br>
+
+<!-- <p id="player1Points">Player 1 Score: 0</p> -->
+
+</div>
+<div style="display:none;">
+  <img src="img/background.jpg" alt="ball" id="background">
+  <img src="img/chicken.jpg" alt="puck" id="puck">
+  <img src="img/random.png" alt="puck" id="randomDir">
+</div>
+</body>
+</html>

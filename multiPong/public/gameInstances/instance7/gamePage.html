@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+   <script>
+     // Initialize Firebase
+     var config = {
+       apiKey: "AIzaSyAuHQfXZgMHSYVUHOTxRcfPM4xAq1OvVNA",
+       authDomain: "multiplayerpong-ee19b.firebaseapp.com",
+       databaseURL: "https://multiplayerpong-ee19b.firebaseio.com",
+       projectId: "multiplayerpong-ee19b",
+       storageBucket: "multiplayerpong-ee19b.appspot.com",
+       messagingSenderId: "338150572162"
+     };
+     firebase.initializeApp(config);
+   </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascripts/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css" />
+  </head>
+  <body>
+    <div id="content">
+      <div id="activeGames">
+        <h1>Game Lobby</h1>
+        <div id="activeSim">
+        <div class="labelDiv"><input type="submit" onsubmit="sUp()" id="signOutButton" value="Sign-Out"></div>
+
+        <table id="simList">
+          <thead id="games">
+            <tr>
+              <th>Name</th>
+              <!-- <th># of Players</th> -->
+              <th>Link</th>
+            </tr>
+
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+
+      </div>
+      <div id="newSim" style="display:none;">
+        <h1>New Game</h1>
+        <form id="newGame" onsubmit="newGame()">
+          <label>Game Name <br><input type="text" id="name" style="width:300px;"></label><br><br>
+          <button id="createNewGame" type="submit">Create</button>
+        </form>
+      </div>
+      <!--<div id="database">-->
+        <!--<h1>Access database</h1>-->
+        <!--<form id="database">-->
+          <!--<label>Name: <input type="text" name="charles"></label>-->
+          <!--<button id=type="submit">Do database stuff</button>-->
+        <!--</form>-->
+      <!--</div>-->
+
+    </div>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+
+
+  </body>
+</html>

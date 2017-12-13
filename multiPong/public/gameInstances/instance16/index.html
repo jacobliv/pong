@@ -1,0 +1,37 @@
+<!Doctype html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAuHQfXZgMHSYVUHOTxRcfPM4xAq1OvVNA",
+    authDomain: "multiplayerpong-ee19b.firebaseapp.com",
+    databaseURL: "https://multiplayerpong-ee19b.firebaseio.com",
+    projectId: "multiplayerpong-ee19b",
+    storageBucket: "multiplayerpong-ee19b.appspot.com",
+    messagingSenderId: "338150572162"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src="javascripts/title.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/title.css" />
+</head>
+<body>
+  <h1 id="title">Multiplayer Pong</h1>
+  <div id="logIn">
+    <h1>Please Log in</h1>
+    <form onsubmit="login()">
+      <div class="labelDiv"><label class="labels">Username: <input type="text"></label></div>
+      <div class="labelDiv"><label class="labels">Password: <input type="password"></label></div>
+      <div class="labelDiv"><button id="logInButton">Log-In</button></div>
+    </form>
+    <h2>You may also sign-in with:</h2>
+    <img src="img/googleIcon.png" id="google" width="70px;">
+    <h3>Don't have an account? </h3>
+    <div class="labelDiv"><input type="submit" onsubmit="signup()" id="signUpButton" value="Sign-Up"></div>
+  </div>
+</body>
+</html>

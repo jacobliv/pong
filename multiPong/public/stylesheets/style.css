@@ -1,0 +1,84 @@
+canvas{
+  border:1px solid black;
+  float:left;
+  image-rendering: auto;
+image-rendering: crisp-edges;
+image-rendering: pixelated;
+
+}
+canvas{
+  border:1px solid #000000;
+  padding: 0;
+  margin: auto;
+  display: block;
+  /*max-height: 100%;*/
+
+  position: absolute;
+  top: -40px;
+  bottom: 0;
+  left: 4px;
+  right: 4px;
+  box-shadow: 2px 2px 4px black, -2px -2px 4px black, -2px 2px 4px black, 2px -2px 4px black;
+
+
+}
+.player1Hearts{
+  margin: auto;
+  position: absolute;
+  left:0;
+  top:100px;
+  bottom: 40;
+  width:40px;
+  height:50%;
+  visibility: visible;
+  /*//background-color: red;*/
+}
+.player2Hearts{
+  margin: auto;
+  position: absolute;
+  right:0;
+  top:100px;
+  bottom: 40;
+  width:30px;
+  height:50%;
+  visibility: visible;
+  /*//background-color: red;*/
+}
+.player3Hearts{
+  margin:0 auto;
+  display: block;
+  /*max-height: 100%;*/
+
+  position: absolute;
+  top: 0px;
+  bottom: -40;
+  left: 300px;
+  right: 0px;
+  width:50%;
+  height:30px;
+    visibility: visible;
+  /*//background-color: red;*/
+}
+.player4Hearts{
+  margin:0 auto;
+  display: block;
+  /*max-height: 100%;*/
+
+  position: absolute;
+
+  bottom: 0;
+  left: 300px;
+  right: 0px;
+  width:50%;
+  height:30px;
+    visibility: visible;
+  /*background-color: red;*/
+}
+.heart{
+  width:30px;
+  text-align: center;
+}
+.heartDead{
+  width:30px;
+  visibility: hidden;
+}

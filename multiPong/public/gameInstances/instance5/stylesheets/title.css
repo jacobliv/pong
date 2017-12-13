@@ -1,0 +1,42 @@
+body{
+  text-align: center;
+}
+#title{
+  font-size: 50px;
+  text-shadow: 1px 1px 1px gray;
+}
+#logIn{
+
+  margin:150px auto;
+  width:40%;
+  height:500px;
+  border: solid #e0e0e0 1px;
+  border-radius: 20px;
+  /*box-shadow: 2px 2px 2px black;*/
+  background-color: #f1f1f1;
+}
+.labels{
+  font-size: 40px;
+
+}
+.labelDiv{
+  margin-top: 20px;
+}
+input{
+  width:40%;
+  height:40px;
+  font-size: 35px;
+}
+#logInButton{
+  width:15%;
+  height:35px;
+  font-size: 25px;
+}
+#signUpButton{
+  width:15%;
+  height:35px;
+  font-size: 25px;
+}
+img{
+  cursor: pointer;
+}
